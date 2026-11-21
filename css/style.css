@@ -51,3 +51,9 @@ header {
     flex-wrap: wrap;
     gap: 10px;
 }
+
+.cartoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
