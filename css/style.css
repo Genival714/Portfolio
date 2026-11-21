@@ -35,3 +35,19 @@ article {
 .ativo {
     font-weight: var(--peso-fonte-ativo);
 }
+
+#menu-ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
