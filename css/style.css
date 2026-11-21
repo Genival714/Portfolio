@@ -1,1 +1,37 @@
-/* Seus estilos (CSS) ficam aqui. */
+:root {
+    --texto: #333;  /*cinza-escuro*/
+    --texto-secundario: #555;  /*cinza-médio*/
+    --links: #0051a6;  /*azul*/ 
+    --fundo: whitesmoke;
+    --fonte: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --borda: 1px solid #ccc; /*Cinza claro*/
+    --peso-fonte-ativo: bold;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: var(--fonte);
+}
+
+h1 {
+    color: var(--texto);
+}
+
+h2 {
+    color: var(--texto-secundario);
+}
+
+a {
+    color: var(--links);
+}
+
+article {
+    border: var(--borda);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.ativo {
+    font-weight: var(--peso-fonte-ativo);
+}
