@@ -14,7 +14,7 @@
 - <bibliotecas usadas, se houver>
 
 ## Seções
-Início · Sobre mim · Habilidades · Projetos · Contato
+Início · Sobre mim · Projetos
 
 ## Como ver o projeto
 1. Baixe ou clone este repositório.
@@ -23,6 +23,8 @@ Início · Sobre mim · Habilidades · Projetos · Contato
 ## Estrutura de pastas
 ```
 ├── index.html      página principal
+├── sobre.html      sobre mim
+├── projetos.html   projetos
 ├── css/style.css   estilos
 ├── js/main.js      interações
 └── assets/img/     imagens
