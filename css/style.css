@@ -1,27 +1,35 @@
 :root {
-    --texto: #333;  /*cinza-escuro*/
-    --texto-secundario: #555;  /*cinza-médio*/
-    --links: #0051a6;  /*azul*/ 
-    --fundo: whitesmoke;
-    --fonte: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    --borda: 1px solid #ccc; /*Cinza claro*/
+    --texto: #F3EFE6; /*Branco*/
+    --texto-secundario: #94A39B; /*Cinza Médio*/
+    --links: #38BDF8; /*Azul*/
+    --fundo: #0F1612; /*Verde Escuro*/
+    --fonte-titulo: 'Cinzel', Georgia, serif; /*Fonte Título*/
+    --fonte-texto: 'Plus Jakarta Sans', "Segoe UI", Arial, sans-serif; /*Fonte Texto*/
+    --fonte-codigo: 'JetBrains Mono', Consolas, monospace; /*Fonte Código*/
+    --borda: 1px solid var(--dourado); /*Dourado*/
     --peso-fonte-ativo: bold;
+    --superficie: #18241E;  /*Verde Escuro 2*/
+    --dourado: #D4AF37; /*Dourado*/
 }
 
 body {
     background-color: var(--fundo);
     color: var(--texto);
-    font-family: var(--fonte);
+    font-family: var(--fonte-texto);
 }
 
 h1 {
-    color: var(--texto);
+    color: var(--dourado);
     font-size: 2rem;
 }
 
 h2 {
-    color: var(--texto-secundario);
+    color: var(--dourado);
     font-size: 1.5rem;
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-titulo);
 }
 
 a {
@@ -32,6 +40,7 @@ article {
     border: var(--borda);
     padding: 10px;
     margin: 10px 0;
+    background-color: var(--superficie);
 }
 
 .ativo {
