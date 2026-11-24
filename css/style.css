@@ -12,8 +12,13 @@
     --dourado: #D4AF37; /*Dourado*/
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: var(--fundo);
+    background: radial-gradient(circle at top, var(--superficie), var(--fundo) 70%);
+    background-attachment: fixed;
     color: var(--texto);
     font-family: var(--fonte-texto);
 }
@@ -61,6 +66,12 @@ header {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    position: sticky;
+    top: 0;
+    background-color: var(--fundo);
+    z-index: 10;
+    border-bottom: var(--borda);
+    padding: 10px;
 }
 
 .cartoes {
@@ -86,4 +97,8 @@ img {
     h2 {
         font-size: 1.2rem;
     }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
 }
