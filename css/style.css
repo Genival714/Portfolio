@@ -1,7 +1,8 @@
 :root {
     --texto: #F3EFE6; /*Branco*/
     --texto-secundario: #94A39B; /*Cinza Médio*/
-    --links: #38BDF8; /*Azul*/
+    --ciano: #38BDF8; /*Ciano*/
+    --links: var(--ciano);
     --fundo: #0F1612; /*Verde Escuro*/
     --fonte-titulo: 'Cinzel', Georgia, serif; /*Fonte Título*/
     --fonte-texto: 'Plus Jakarta Sans', "Segoe UI", Arial, sans-serif; /*Fonte Texto*/
@@ -80,9 +81,58 @@ header {
     gap: 10px;
 }
 
+.logo {
+    font-family: var(--fonte-titulo);
+    color: var(--dourado);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.tela-titulo {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.tela-titulo h1 {
+    font-size: 3rem;
+}
+
+.subtitulo {
+    color: var(--texto-secundario);
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.botao {
+    padding: 0.75rem 1.5rem;
+    border: var(--borda);
+    border-radius: 4px;
+    color: var(--dourado);
+    font-family: var(--fonte-titulo);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao:hover, .botao:focus-visible {
+    color: var(--fundo);
+    background-color: var(--dourado);
+}
+
 img {
     max-width: 100%;
     height: auto;
+}
+
+.tela-titulo img {
+    width: 200px;
+    border-radius: 50%;
+    border: var(--dourado) solid 3px;
+    box-shadow: 0 0 20px var(--ciano);
 }
 
 @media (max-width: 600px) {
@@ -96,6 +146,10 @@ img {
 
     h2 {
         font-size: 1.2rem;
+    }
+
+    .tela-titulo h1 {
+        font-size: 2rem;
     }
 }
 
