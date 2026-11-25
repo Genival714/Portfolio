@@ -135,6 +135,26 @@ img {
     box-shadow: 0 0 20px var(--ciano);
 }
 
+.dialogo {
+    max-width: 40rem;
+    margin: 1.5rem auto;
+    background-color: var(--superficie);
+    border: var(--borda);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    position: relative;
+}
+
+.dialogo::after {
+    content: "▼";
+    font-size: 0.75rem;
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.5rem;
+    animation: piscar 1s infinite alternate;
+}
+
 @media (max-width: 600px) {
     .cartoes {
         grid-template-columns: 1fr;
@@ -155,4 +175,10 @@ img {
 
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
+    .dialogo::after { animation: none; }
+}
+
+@keyframes piscar {
+    from {opacity: 1;}
+    to {opacity: 0.2;}
 }
